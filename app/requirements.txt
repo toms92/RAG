@@ -1,3 +1,4 @@
 langchain
 langchain-core
 lang-chain-community
+python-dotenv

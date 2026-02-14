@@ -12,6 +12,8 @@ services:
       - db-network
     environment:
       - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+      - PERSIST_DIRECTORY=/app/vector_db
     restart: unless-stopped
 
   rag-system:
@@ -22,7 +24,10 @@ services:
     expose:
         - "8001"
     volumes:
-      - ./data/raw:/app/data/raw # Mappa i tuoi documenti
+      - ./app:/app # Mappa il codice per sviluppo live
+      - ./data/raw:/app/data/raw
+      # --- AGGIUNTA CACHE MODELLI ---
+      - ./models_cache:/root/.cache/huggingface
     networks:
       - app-network
       - db-network
