@@ -22,5 +22,5 @@ COPY . .
 # Esponi la porta del tuo sistema RAG (es. 8001 come nel tuo compose)
 EXPOSE 8001
 
-# Avvia l'applicazione (sostituisci main.py con il tuo file principale)
-CMD ["python", "main.py"]
+# Avvia l'applicazione (sostituisci main.py con il tuo file principal
+CMD ["python", "core/main.py"]

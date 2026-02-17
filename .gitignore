@@ -1,2 +1,4 @@
 data
 env
+models_cache
+ollama_data
