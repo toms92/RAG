@@ -5,13 +5,13 @@ services:
     expose:
       - "8000"
     volumes:
-      - ./data/vector_db:/chroma/chroma # Path interno corretto per Chroma
-    networks:
-      - db-network
+      - ./data/vector_db:/chroma/chroma
     environment:
       - IS_PERSISTENT=TRUE
       - ANONYMIZED_TELEMETRY=FALSE
-      - PERSIST_DIRECTORY=/app/vector_db
+      - PERSIST_DIRECTORY=/chroma/chroma  # ← stesso path del volume
+    networks:
+      - db-network
     restart: unless-stopped
 
   rag-system:
@@ -19,6 +19,8 @@ services:
       context: ./app # Assicurati che il Dockerfile sia dentro la cartella /app
       dockerfile: Dockerfile
     container_name: rag-system
+      # Usa il flag -m per caricare il pacchetto correttamente
+    command: python -m core.main
     stdin_open: true
     tty: true
 
