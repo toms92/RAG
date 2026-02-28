@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c96551ca-f702-43b7-8f30-0b160411bac8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/brain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/embeddings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/llm_manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/vector_store.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +102,9 @@
       <workItem from="1771058287115" duration="750000" />
       <workItem from="1771312880938" duration="5164000" />
       <workItem from="1771328440919" duration="650000" />
-      <workItem from="1771351617456" duration="9041000" />
+      <workItem from="1771351617456" duration="9249000" />
+      <workItem from="1771502043011" duration="19000" />
+      <workItem from="1772265844879" duration="1061000" />
     </task>
     <servers />
   </component>

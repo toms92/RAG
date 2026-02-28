@@ -20,7 +20,7 @@ services:
       dockerfile: Dockerfile
     container_name: rag-system
       # Usa il flag -m per caricare il pacchetto correttamente
-    command: python -m core.main
+    command: python -m core.pipeline
     stdin_open: true
     tty: true
 

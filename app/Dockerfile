@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 8001
 
 # Avvia l'applicazione (sostituisci main.py con il tuo file principal
-CMD ["python", "core/main.py"]
+CMD ["python", "core/pipeline.py"]
