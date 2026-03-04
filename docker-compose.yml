@@ -52,7 +52,7 @@ services:
     restart: unless-stopped
 
   jupyter:
-    image: jupyter/scipy-notebook:latest
+    image: python:3.12-slim
     container_name: jupyter
     ports:
       - "8888:8888"
@@ -61,7 +61,11 @@ services:
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - PYTHONPATH=/home/jovyan/work
-    command: start-notebook.sh --NotebookApp.token=''
+      - HF_HOME=/home/jovyan/work/models_cache        # ← aggiungi
+      - TRANSFORMERS_CACHE=/home/jovyan/work/models_cache  # ← aggiung
+    command: >
+      bash -c "pip install -r /home/jovyan/work/app/requirements.txt &&
+               start-notebook.sh --NotebookApp.token=''"
     networks:
       - app-network
       - db-network

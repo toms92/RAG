@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c96551ca-f702-43b7-8f30-0b160411bac8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RAG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RAG.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07ed8c03-0585-4e6c-ae25-2680c1e9034d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/07ed8c03-0585-4e6c-ae25-2680c1e9034d/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/.ipynb_checkpoints/config-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/.ipynb_checkpoints/prompt_embedder-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/json_prompt_read.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/retriever.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/utils.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/prompt_embedder_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/prompt_embedder_test.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +35,6 @@
       <list>
         <option value="Dockerfile" />
         <option value="Python Script" />
-        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -60,6 +73,7 @@
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/tomma/PycharmProjects/RAG/data/vector_db&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -76,6 +90,7 @@
       <recent name="C:\Users\tomma\PycharmProjects\RAG\data\vector_db" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tommaso\PycharmProjects\RAG\app\core" />
       <recent name="C:\Users\tomma\PycharmProjects\RAG\app" />
     </key>
   </component>
@@ -100,23 +115,14 @@
       <workItem from="1771328440919" duration="650000" />
       <workItem from="1771351617456" duration="9249000" />
       <workItem from="1771502043011" duration="19000" />
-      <workItem from="1772265844879" duration="2793000" />
-      <workItem from="1772450268589" duration="1237000" />
+      <workItem from="1772265844879" duration="1061000" />
+      <workItem from="1772390494513" duration="19000" />
+      <workItem from="1772624459684" duration="1366000" />
+      <workItem from="1772625951464" duration="7631000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
