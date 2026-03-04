@@ -51,6 +51,22 @@ services:
       - app-network
     restart: unless-stopped
 
+  jupyter:
+    image: jupyter/scipy-notebook:latest
+    container_name: jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - PYTHONPATH=/home/jovyan/work
+    command: start-notebook.sh --NotebookApp.token=''
+    networks:
+      - app-network
+      - db-network
+    restart: unless-stopped
+
 networks:
   app-network:
     driver: bridge

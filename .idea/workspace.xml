@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c96551ca-f702-43b7-8f30-0b160411bac8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/brain.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/embeddings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/llm_manager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/temp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/vector_store.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +21,7 @@
       <list>
         <option value="Dockerfile" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -104,11 +100,23 @@
       <workItem from="1771328440919" duration="650000" />
       <workItem from="1771351617456" duration="9249000" />
       <workItem from="1771502043011" duration="19000" />
-      <workItem from="1772265844879" duration="1061000" />
+      <workItem from="1772265844879" duration="2793000" />
+      <workItem from="1772450268589" duration="1237000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
