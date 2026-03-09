@@ -16,11 +16,9 @@ services:
 
   rag-system:
     build:
-      context: ./app # Assicurati che il Dockerfile sia dentro la cartella /app
-      dockerfile: Dockerfile
+      context: ./app
+      dockerfile: Dockerfiles/rag/Dockerfile
     container_name: rag-system
-      # Usa il flag -m per caricare il pacchetto correttamente
-    command: python -m core.pipeline
     stdin_open: true
     tty: true
 
@@ -52,7 +50,9 @@ services:
     restart: unless-stopped
 
   jupyter:
-    image: jupyter/scipy-notebook:latest
+    build:
+      context: ./app
+      dockerfile: Dockerfiles/jupyter/Dockerfile
     container_name: jupyter
     ports:
       - "8888:8888"
@@ -61,7 +61,9 @@ services:
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - PYTHONPATH=/home/jovyan/work
-    command: start-notebook.sh --NotebookApp.token=''
+      - HF_HOME=/home/jovyan/work/models_cache        # ← aggiungi
+      - TRANSFORMERS_CACHE=/home/jovyan/work/models_cache  # ← aggiung
+      - ANONYMIZED_TELEMETRY=FALSE
     networks:
       - app-network
       - db-network

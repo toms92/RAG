@@ -1,7 +1,33 @@
-langchain==0.2.16
-langchain-core==0.2.38
-langchain-community==0.2.16
-langchain-huggingface==0.0.3
-langchain-chroma==0.1.4
-sentence-transformers==3.0.1
-python-dotenv==1.0.1
+# =============================================
+# LangChain stack - compatibile con Python 3.12
+# =============================================
+langchain #==0.3.7
+langchain-core #==0.3.19
+langchain-community #==0.3.7
+langchain-huggingface #==0.1.2
+langchain-chroma #==0.1.4
+
+# =============================================
+# Vector DB
+# =============================================
+chromadb==0.5.3
+chroma-hnswlib==0.7.3
+posthog==4.8.0
+# =============================================
+# Embeddings
+# =============================================
+sentence-transformers #==3.2.1
+transformers #==4.44.2
+huggingface-hub #==0.24.7
+
+# =============================================
+# Dipendenze core - versioni pinned per evitare conflitti
+# =============================================
+numpy #==1.26.4
+tokenizers #==0.20.0
+packaging #==24.1   # langchain-core 0.3 richiede <25
+
+# =============================================
+# Utility
+# =============================================
+python-dotenv #==1.0.1

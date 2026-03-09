@@ -13,11 +13,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Copia e installa i requisiti (facciamo questo PRIMA di copiare il codice per sfruttare la cache di Docker)
-COPY requirements.txt .
+COPY ../../requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copia il resto del codice dell'app
-COPY . .
+COPY ../.. .
 
 # Esponi la porta del tuo sistema RAG (es. 8001 come nel tuo compose)
 EXPOSE 8001

@@ -1,5 +1,5 @@
 import config
-import json_prompt_read
+import json_prompt_reader as jpr
 from sentence_transformers import SentenceTransformer
 
 
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     embedder = PromptEmbedder(model)
 
     #embed prompt from json file
-    prompt = json_prompt_read.read_json_prompt(json_path)
+    prompt = jpr.read_json_prompt(json_path)
 
     # Get the embedding for the prompt
     embedding = embedder.embed(prompt)
