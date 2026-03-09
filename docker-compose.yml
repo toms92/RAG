@@ -63,6 +63,7 @@ services:
       - PYTHONPATH=/home/jovyan/work
       - HF_HOME=/home/jovyan/work/models_cache        # ← aggiungi
       - TRANSFORMERS_CACHE=/home/jovyan/work/models_cache  # ← aggiung
+      - ANONYMIZED_TELEMETRY=FALSE
     networks:
       - app-network
       - db-network
