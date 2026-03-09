@@ -6,11 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="c96551ca-f702-43b7-8f30-0b160411bac8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/prompt_embedder.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/prompt_embedder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/prompt_embedder_test-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/prompt_embedder_test.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/data/vector_db/chroma.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/95eb860d-6140-44d6-b26b-423efaa2882a/data_level0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/95eb860d-6140-44d6-b26b-423efaa2882a/header.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/95eb860d-6140-44d6-b26b-423efaa2882a/length.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/95eb860d-6140-44d6-b26b-423efaa2882a/link_lists.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/chroma.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/database_files/data_level0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/database_files/header.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/database_files/index_metadata.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/database_files/length.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vector_db/database_files/link_lists.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/prompt_embedder_test-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/prompt_embedder_test-Copy1.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +75,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -78,11 +86,11 @@
       <recent name="C:\Users\tomma\PycharmProjects\RAG\data\vector_db" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tommaso\PycharmProjects\RAG" />
       <recent name="C:\Users\Tommaso\PycharmProjects\RAG\app\Dockerfiles\rag" />
       <recent name="C:\Users\Tommaso\PycharmProjects\RAG\app\Dockerfiles" />
       <recent name="C:\Users\Tommaso\PycharmProjects\RAG\app" />
       <recent name="C:\Users\Tommaso\PycharmProjects\RAG\app\data" />
-      <recent name="C:\Users\Tommaso\PycharmProjects\RAG" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -111,7 +119,8 @@
       <workItem from="1772624459684" duration="1366000" />
       <workItem from="1772625951464" duration="7729000" />
       <workItem from="1772980472658" duration="7500000" />
-      <workItem from="1773060565341" duration="2956000" />
+      <workItem from="1773060565341" duration="4644000" />
+      <workItem from="1773068225403" duration="328000" />
     </task>
     <servers />
   </component>
