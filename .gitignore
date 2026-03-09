@@ -1,4 +1,3 @@
-#data
-#env
+env
 models_cache
 ollama_data
