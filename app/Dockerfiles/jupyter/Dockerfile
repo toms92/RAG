@@ -8,18 +8,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
+WORKDIR /home/jovyan/work
+
+# Installa JupyterLab (prima delle dipendenze del progetto per ottimizzare la cache)
+RUN pip install --no-cache-dir jupyterlab
 
 # Copia e installa le dipendenze del progetto
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Installa JupyterLab
-RUN pip install --no-cache-dir jupyterlab
-
 EXPOSE 8888
 
 # Avvia JupyterLab senza token (solo per sviluppo locale)
+# Usa --notebook-dir per puntare alla cartella di lavoro
 CMD ["jupyter", "lab", \
      "--ip=0.0.0.0", \
      "--port=8888", \

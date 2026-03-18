@@ -1,53 +1,63 @@
 services:
   chroma:
-    image: chromadb/chroma:0.5.3 # Nome corretto dell'immagine
+    image: chromadb/chroma:0.5.3
     container_name: chroma
-    expose:
-      - "8000"
+    ports:
+      - "8000:8000" # Mappo la porta per poterla ispezionare dall'host se necessario
     volumes:
       - ./data:/chroma/chroma
     environment:
       - IS_PERSISTENT=TRUE
       - ANONYMIZED_TELEMETRY=FALSE
-      - PERSIST_DIRECTORY=/chroma/chroma  # ← stesso path del volume
+      - PERSIST_DIRECTORY=/chroma/chroma
     networks:
-      - db-network
+      - rag-net
     restart: unless-stopped
 
-  rag-system:
+  rag:
     build:
       context: ./app
       dockerfile: Dockerfiles/rag/Dockerfile
-    container_name: rag-system
-    stdin_open: true
-    tty: true
-
-    expose:
-        - "8001"
+    container_name: rag
+    ports:
+      - "8001:8001" # Mappo la porta del server FastAPI
     volumes:
       - ./app:/app
-      - ./data/raw:/app/data/raw
       - ./models_cache:/root/.cache/huggingface
-
     networks:
-      - app-network
-      - db-network
+      - rag-net
     depends_on:
       - chroma
+      - ollama
     env_file:
       - .env
+    restart: unless-stopped
 
   ollama:
     image: ollama/ollama:latest
     container_name: ollama
+    ports:
+      - "11434:11434" # Mappo la porta per testare l'LLM dall'host
     volumes:
-      - ./ollama_data:/root/.ollama
-    expose:
-      - "11434"
+      # Modificato per usare il volume Docker nominato (migliori performance e niente problemi di permessi)
+      - ollama_data:/root/.ollama
     networks:
-      - db-network
-      - app-network
+      - rag-net
     restart: unless-stopped
+
+  # --- NUOVO SERVIZIO: Scarica il modello e si spegne ---
+  ollama-pull:
+    image: ollama/ollama:latest
+    container_name: ollama-pull
+    networks:
+      - rag-net
+    environment:
+      - OLLAMA_HOST=ollama:11434 # Dice a questo container di parlare con il server Ollama principale
+    depends_on:
+      - ollama
+    entrypoint: /bin/sh
+    # Aspetta 5 secondi per far avviare il server, poi fa il pull del modello
+    command: -c "sleep 5 && ollama pull llama3.2:3b"
 
   jupyter:
     build:
@@ -61,16 +71,17 @@ services:
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - PYTHONPATH=/home/jovyan/work
-      - HF_HOME=/home/jovyan/work/models_cache        # ← aggiungi
-      - TRANSFORMERS_CACHE=/home/jovyan/work/models_cache  # ← aggiung
+      - HF_HOME=/home/jovyan/work/models_cache
+      - TRANSFORMERS_CACHE=/home/jovyan/work/models_cache
       - ANONYMIZED_TELEMETRY=FALSE
     networks:
-      - app-network
-      - db-network
+      - rag-net
     restart: unless-stopped
 
 networks:
-  app-network:
+  rag-net:
     driver: bridge
-  db-network:
-    driver: bridge
+
+volumes:
+  # Questo volume ora manterrà il modello llama3.2 salvato in cache tra un riavvio e l'altro
+  ollama_data:

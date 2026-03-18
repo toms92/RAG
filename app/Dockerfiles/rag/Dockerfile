@@ -13,14 +13,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Copia e installa i requisiti (facciamo questo PRIMA di copiare il codice per sfruttare la cache di Docker)
-COPY ../../requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copia il resto del codice dell'app
-COPY ../.. .
+COPY . .
 
-# Esponi la porta del tuo sistema RAG (es. 8001 come nel tuo compose)
+# Esponi la porta del server FastAPI
 EXPOSE 8001
 
-# Avvia l'applicazione (sostituisci main.py con il tuo file principal
-CMD ["python", "core/prompt_embedder.py"]
+# Avvia il server FastAPI con Uvicorn
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8001"]

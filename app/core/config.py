@@ -11,7 +11,7 @@ CHROMA_COLLECTION = "ricette"
 CHROMA_PERSIST_DIR = "/chroma/chroma"
 
 # Parametri Modelli di Embedding
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL_NAME", "all-MiniLM-L6-v2")
 HF_HOME = os.getenv("HF_HOME", "/root/.cache/huggingface")
 
 # Parametri LLM (Ollama)

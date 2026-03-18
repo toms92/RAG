@@ -73,5 +73,41 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="chroma [3]" uuid="2f519517-a77a-4d43-a198-e594f215f790">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Tommaso\PycharmProjects\RAG\data\chroma.sqlite3</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/junit/junit-bom/5.12.2/junit-bom-5.12.2.pom</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/junit/junit-bom/5.12.2/junit-bom-5.12.2.pom.sha1</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/junit/junit-bom/5.12.2/_remote.repositories</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/sqlite-jdbc-3.51.1.0.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/sqlite-jdbc-3.51.1.0.jar.sha1</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/sqlite-jdbc-3.51.1.0.pom</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/sqlite-jdbc-3.51.1.0.pom.sha1</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/_remote.repositories</url>
+        </library>
+      </libraries>
+    </data-source>
   </component>
 </project>
