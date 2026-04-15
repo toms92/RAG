@@ -1,7 +1,7 @@
 services:
   chroma:
     image: chromadb/chroma:0.5.3
-    container_name: chroma
+    container_name: chroma-sprout
     ports:
       - "8000:8000" # Mappo la porta per poterla ispezionare dall'host se necessario
     volumes:
@@ -18,7 +18,7 @@ services:
     build:
       context: ./app
       dockerfile: Dockerfiles/rag/Dockerfile
-    container_name: rag
+    container_name: rag-sprout
     ports:
       - "8001:8001" # Mappo la porta del server FastAPI
     volumes:
@@ -35,7 +35,7 @@ services:
 
   ollama:
     image: ollama/ollama:latest
-    container_name: ollama
+    container_name: ollama-sprout
     ports:
       - "11434:11434" # Mappo la porta per testare l'LLM dall'host
     volumes:
@@ -48,7 +48,7 @@ services:
   # --- NUOVO SERVIZIO: Scarica il modello e si spegne ---
   ollama-pull:
     image: ollama/ollama:latest
-    container_name: ollama-pull
+    container_name: ollama-pull-sprout
     networks:
       - rag-net
     environment:
@@ -59,24 +59,7 @@ services:
     # Aspetta 5 secondi per far avviare il server, poi fa il pull del modello
     command: -c "sleep 5 && ollama pull llama3.2:3b"
 
-  jupyter:
-    build:
-      context: ./app
-      dockerfile: Dockerfiles/jupyter/Dockerfile
-    container_name: jupyter
-    ports:
-      - "8888:8888"
-    volumes:
-      - .:/home/jovyan/work
-    environment:
-      - JUPYTER_ENABLE_LAB=yes
-      - PYTHONPATH=/home/jovyan/work
-      - HF_HOME=/home/jovyan/work/models_cache
-      - TRANSFORMERS_CACHE=/home/jovyan/work/models_cache
-      - ANONYMIZED_TELEMETRY=FALSE
-    networks:
-      - rag-net
-    restart: unless-stopped
+
 
 networks:
   rag-net:
