@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c96551ca-f702-43b7-8f30-0b160411bac8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.Trash-0/files/itemsExtracted.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEMINI.md" beforeDir="false" afterPath="$PROJECT_DIR$/GEMINI.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/input_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/input_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/retriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/retriever.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/toms92/RAG.git&quot;,
-    &quot;accountId&quot;: &quot;60a523a6-4e0f-4f95-9eba-f6f62c6a370a&quot;
+    &quot;accountId&quot;: &quot;f2d00e1a-cce0-4a80-bcc8-0f45d596e7dc&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -46,29 +52,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tomma/PycharmProjects/RAG/data/vector_db&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.android.studio.ml.bot.mainConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "PowerShell.test.ps1 (1).executor": "Run",
+    "PowerShell.test.ps1 (2).executor": "Run",
+    "PowerShell.test.ps1 (3).executor": "Run",
+    "PowerShell.test.ps1 (4).executor": "Run",
+    "PowerShell.test.ps1 (5).executor": "Run",
+    "PowerShell.test.ps1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/tomma/PycharmProjects/RAG/data/vector_db",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "com.android.studio.ml.bot.mainConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tomma\PycharmProjects\RAG\data\vector_db" />
@@ -80,6 +92,37 @@
       <recent name="C:\Users\Tommaso\PycharmProjects\RAG\app\Dockerfiles" />
       <recent name="C:\Users\Tommaso\PycharmProjects\RAG\app" />
     </key>
+  </component>
+  <component name="RunManager" selected="PowerShell.test.ps1 (1)">
+    <configuration name="test.ps1 (1)" type="PowerShellRunType" factoryName="PowerShell" temporary="true" scriptUrl="$PROJECT_DIR$/test.ps1" executablePath="$PROJECT_DIR$/../../../../WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe">
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test.ps1 (3)" type="PowerShellRunType" factoryName="PowerShell" temporary="true" scriptUrl="$PROJECT_DIR$/test.ps1" executablePath="$PROJECT_DIR$/../../../../WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe">
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test.ps1 (4)" type="PowerShellRunType" factoryName="PowerShell" temporary="true" scriptUrl="$PROJECT_DIR$/test.ps1" executablePath="$PROJECT_DIR$/../../../../WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe">
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test.ps1 (5)" type="PowerShellRunType" factoryName="PowerShell" temporary="true" scriptUrl="$PROJECT_DIR$/test.ps1" executablePath="$PROJECT_DIR$/../../../../WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe">
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test.ps1" type="PowerShellRunType" factoryName="PowerShell" temporary="true" scriptUrl="$PROJECT_DIR$/test.ps1" executablePath="$PROJECT_DIR$/../../../../WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe">
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PowerShell.test.ps1 (1)" />
+        <item itemvalue="PowerShell.test.ps1" />
+        <item itemvalue="PowerShell.test.ps1 (5)" />
+        <item itemvalue="PowerShell.test.ps1 (4)" />
+        <item itemvalue="PowerShell.test.ps1 (3)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -115,6 +158,8 @@
       <workItem from="1773835195636" duration="6807000" />
       <workItem from="1773850219103" duration="8389000" />
       <workItem from="1774888303117" duration="101000" />
+      <workItem from="1776284414401" duration="3054000" />
+      <workItem from="1776343455794" duration="4075000" />
     </task>
     <servers />
   </component>
